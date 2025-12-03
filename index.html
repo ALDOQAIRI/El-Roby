@@ -7,7 +7,50 @@
     <title>الروبي | للمصنعات واللحوم</title>
 
     <meta name="google-site-verification" content="M4AVPnmakVfGb3OU5CIqN--Dqi4C-6KYQn-MhFM0ymU" />
-    <meta name="description" content="منيو الروبي للحوم والمصنعات. خدمة توصيل للمنازل.">
+    <!-- تحسينات SEO للظهور في جوجل -->
+    <meta name="description" content="الروبي للحوم والمصنعات - أفضل جودة للحوم البلدي، كفتة، حواوشي، وسجق بيتي. خدمة توصيل للمنازل 24 ساعة. اطلب الآن عبر الموقع أو الواتساب.">
+    <meta name="keywords" content="الروبي, جزارة الروبي, لحوم بلدي, مصنعات لحوم, كفتة, حواوشي, برجر, سجق, توصيل طلبات, جزارة في مصر">
+    <meta name="author" content="الروبي للحوم">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (لتحسين شكل الرابط عند المشاركة على فيسبوك وواتساب) -->
+    <meta property="og:title" content="الروبي | أصل اللحوم والمصنعات">
+    <meta property="og:description" content="منيو الروبي للحوم الطازجة والمصنعات البيتي. اطلب أونلاين الآن.">
+    <meta property="og:image" content="https://pps.whatsapp.net/v/t61.24694-24/491837277_975255798065507_888456427333343564_n.jpg?ccb=11-4&oh=01_Q5Aa3AGbSm6G-sE8jIgjSx6QlkI7NJYu9I2N-wkffkMFp-7qRA&oe=69317C7B&_nc_sid=5e03e0&_nc_cat=108">
+    <meta property="og:url" content="رابط_موقعك_هنا">
+    <meta property="og:type" content="website">
+
+    <!-- Schema.org (كود سحري ليظهر المحل كنشاط تجاري في جوجل) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ButcherShop",
+      "name": "الروبي للحوم والمصنعات",
+      "image": "https://pps.whatsapp.net/v/t61.24694-24/491837277_975255798065507_888456427333343564_n.jpg?ccb=11-4&oh=01_Q5Aa3AGbSm6G-sE8jIgjSx6QlkI7NJYu9I2N-wkffkMFp-7qRA&oe=69317C7B&_nc_sid=5e03e0&_nc_cat=108",
+      "description": "أجود أنواع اللحوم والمصنعات البيتي، خدمة توصيل للمنازل.",
+      "telephone": "+201144846412",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "EG",
+        "addressRegion": "Cairo" 
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "10:00",
+        "closes": "23:59"
+      }
+    }
+    </script>
 
     <link rel="icon" href="https://pps.whatsapp.net/v/t61.24694-24/491837277_975255798065507_888456427333343564_n.jpg?ccb=11-4&oh=01_Q5Aa3AGbSm6G-sE8jIgjSx6QlkI7NJYu9I2N-wkffkMFp-7qRA&oe=69317C7B&_nc_sid=5e03e0&_nc_cat=108" type="image/png">
     
@@ -279,22 +322,41 @@
 <body>
 
     <header>
-        <div class="logo-text"><i class="fas fa-drumstick-bite" style="color:var(--primary)"></i> الروبي <span>للحوم</span></div>
+        <!-- التعديل 1: استخدام h1 بدلاً من div ورابط للصفحة الرئيسية لتعزيز الأرشفة -->
+        <a href="index.html" style="text-decoration: none;">
+            <h1 class="logo-text">
+                <i class="fas fa-drumstick-bite" style="color:var(--primary)"></i> 
+                الروبي 
+                <span>للحوم والمصنعات</span>
+            </h1>
+        </a>
+
         <div class="nav-actions">
-            <!-- Facebook Icon -->
-            <a href="https://www.facebook.com/p/%D8%A7%D9%84%D8%B1%D9%88%D8%A8%D9%8A-ElRoby-100090268540909/" target="_blank" class="nav-btn">
+            <!-- Facebook Icon: إضافة rel="noopener" للأمان والسرعة -->
+            <a href="https://www.facebook.com/p/%D8%A7%D9%84%D8%B1%D9%88%D8%A8%D9%8A-ElRoby-100090268540909/" 
+               target="_blank" 
+               class="nav-btn" 
+               aria-label="زيارة صفحة فيسبوك"
+               rel="noopener noreferrer">
                 <i class="fab fa-facebook" style="color:var(--facebook);"></i>
             </a>
             
             <!-- WhatsApp Icon -->
-            <a href="https://wa.me/201144846412" target="_blank" class="nav-btn">
+            <a href="https://wa.me/201144846412" 
+               target="_blank" 
+               class="nav-btn" 
+               aria-label="تواصل معنا عبر واتساب"
+               rel="noopener noreferrer">
                 <i class="fab fa-whatsapp" style="color:var(--whatsapp); font-size: 1.6rem;"></i>
             </a>
 
-            <button class="nav-btn" onclick="openModal('cartModal')">
+            <!-- Cart Button -->
+            <button class="nav-btn" onclick="openModal('cartModal')" aria-label="سلة المشتريات">
                 <i class="fas fa-shopping-basket"></i> <span class="badge" id="cartCount">0</span>
             </button>
-            <button class="nav-btn" onclick="openModal('loginModal')">
+            
+            <!-- Admin Button -->
+            <button class="nav-btn" onclick="openModal('loginModal')" aria-label="تسجيل دخول المسؤول">
                 <i class="fas fa-user-cog"></i>
             </button>
         </div>
